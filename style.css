@@ -7,3 +7,70 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+img {
+    width: 100%;
+    max-width: 50px;
+}
+
+/* =========
+Typography
+========= */
+
+.dog-name {
+    color: #F8F8F8;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.dog-bio {
+    color: #B7B7B7;
+    font-size: 1.25rem;
+}
+
+.dog-img {
+    max-width: 534px;
+    border-radius: 5px;
+}
+
+/* === buttons === */
+
+button {
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5em;
+    border: none;
+    text-align: center;
+    box-shadow: 0 10px 20px #E9E9EA;
+}
+
+.dislike-btn:hover,
+.dislike-btn:focus {
+    background: #FFE7EF;
+}
+
+.like-btn:hover,
+.like-btn:focus {
+    background: #DBFFF4;
+}
+
+/* =========
+Layout
+========= */
+
+.dog {
+    max-width: 550px;
+    /* height: 66vh; */
+}
+
+.dog-details {
+    width: 95%;
+    position: relative;
+    left: 7.5px;
+}
+
+.dog-info {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}

@@ -6,7 +6,8 @@ const dogs = [
         bio: "Art. Literature. Natural wine. Yoga.",
         hasBeenSwiped: false,
         hasBeenLiked: false
-    },{
+    },
+    {
         name: "Bella",
         avatar: "images/dog-bella.jpg",
         age: 43,
@@ -31,3 +32,5 @@ const dogs = [
         hasBeenLiked: false
     }
 ]
+
+export default dogs;
