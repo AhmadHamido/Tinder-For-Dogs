@@ -10,12 +10,11 @@ body {
 
 img {
     width: 100%;
-    max-width: 50px;
 }
 
-/* =========
+/* ============
 Typography
-========= */
+============ */
 
 .dog-name {
     color: #F8F8F8;
@@ -28,20 +27,53 @@ Typography
     font-size: 1.25rem;
 }
 
+/* === images === */
+
 .dog-img {
-    max-width: 534px;
-    border-radius: 5px;
+    border-radius: 10px;
+    max-height: 510px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.top-icon {
+    width: 30px;
+}
+
+.badge {
+    position: absolute;
+}
+
+.icon-btn {
+    width: 30px;
+}
+
+.icon-x {
+    width: 28px;
+}
+
+.profile-pic {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
 }
 
 /* === buttons === */
 
-button {
-    background: #fff;
-    border-radius: 50%;
-    padding: 1.5em;
+button { 
+    cursor: pointer;
     border: none;
     text-align: center;
     box-shadow: 0 10px 20px #E9E9EA;
+}
+
+.like-btn,
+.dislike-btn {
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5em;
 }
 
 .dislike-btn:hover,
@@ -54,23 +86,72 @@ button {
     background: #DBFFF4;
 }
 
-/* =========
-Layout
-========= */
+.like-btn {
+    justify-self: start;
+}
 
-.dog {
-    max-width: 550px;
-    /* height: 66vh; */
+.dislike-btn {
+    justify-self: end;
+}
+
+.discovery-btn {
+    padding: 1em;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #F83375, #FA695A);
+}
+
+/* ============
+Layout
+============ */
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    margin: 1.5em auto;
+    grid-template-columns: 1em auto 1em;
+    box-shadow: 5px 5px 10px #E9E9EA, -5px -5px 10px #E9E9EA;
+    border-radius: 10px;
+    /* height: 100vh; */
+}
+
+.container,
+header,
+.tindog-btns {
+    display: grid;
+}
+
+header {
+    margin: .75em 0;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+header,
+main,
+.tindog-btns {
+    grid-column: 2;
+}
+
+.tindog-btns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin-bottom: 1em;
 }
 
 .dog-details {
-    width: 95%;
     position: relative;
-    left: 7.5px;
 }
 
 .dog-info {
     position: absolute;
     left: 10px;
     bottom: 10px;
+}
+
+/* ============
+Media Query
+============ */
+
+@media (min-width: 551px) {
+    
 }
