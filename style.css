@@ -27,6 +27,11 @@ Typography
     font-size: 1.25rem;
 }
 
+.no-more-dogs {
+    text-align: center;
+    align-self: center;
+}
+
 /* === images === */
 
 .dog-img {
@@ -44,6 +49,8 @@ Typography
 
 .badge {
     position: absolute;
+    width: 43.80%;
+    max-width: 233.91px;
 }
 
 .icon-btn {
@@ -58,9 +65,19 @@ Typography
     max-width: 70px;
     max-height: 70px;
     border-radius: 50%;
+    align-self: end;
+}
+
+.hidden {
+    display: none;
 }
 
 /* === buttons === */
+
+.profile-pic,
+.discovery-btn {
+    justify-self: center;
+}
 
 button { 
     cursor: pointer;
@@ -95,9 +112,18 @@ button {
 }
 
 .discovery-btn {
+    color: #fff;
     padding: 1em;
     border-radius: 30px;
     background-image: linear-gradient(to right, #F83375, #FA695A);
+    box-shadow: 0 10px 20px #c6c6c7;
+    align-self: start;
+}
+
+.discovery-btn:hover,
+.discovery-btn:focus {
+    color: black;
+    background-image: linear-gradient(to right, #f48aad, #f68c80);
 }
 
 /* ============
@@ -111,12 +137,12 @@ Layout
     grid-template-columns: 1em auto 1em;
     box-shadow: 5px 5px 10px #E9E9EA, -5px -5px 10px #E9E9EA;
     border-radius: 10px;
-    /* height: 100vh; */
 }
 
 .container,
 header,
-.tindog-btns {
+.tindog-btns,
+.change-area {
     display: grid;
 }
 
@@ -148,10 +174,6 @@ main,
     bottom: 10px;
 }
 
-/* ============
-Media Query
-============ */
-
-@media (min-width: 551px) {
-    
+.change-area {
+    height: 70vh;
 }
